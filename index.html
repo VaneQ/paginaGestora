@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+	<h1><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Control Leds</h1></b><br>
+    	<body>
+
+        	<b>&nbsp;Modos&nbsp;&nbsp;</b>
+        	<a href="/?modo1=on"><button id="modo1" style='width:100px; height:35px; background-color: #00ff00'>Modo semaforo</button></a>&nbsp;&nbsp;
+
+
+        	<a href="/?modo2=on"><button id="modo2" style='width:100px; height:35px; background-color: #00ff00'>Modo verde un sentido</button></a>&nbsp;&nbsp;
+
+
+        	<a href="/?modo3=on"><button id="modo3" style='width:100px; height:35px; background-color: #00ff00'>Modo verde un sentido 2</button></a>&nbsp;&nbsp;
+
+
+        	<a href="/?modo4=on"><button id="modo4" style='width:100px; height:35px; background-color: #00ff00'>Modo verde un sentido 3</button></a>&nbsp;&nbsp;
+        
+
+        	<a href="/?modo5=on"><button id="modo5" style='width:100px; height:35px; background-color: #ff5252'>Modo luces en rojo</button></a>&nbsp;&nbsp;
+        
+
+        	<a href="/?modo6=on"><button id="modo6" style='width:100px; height:35px; background-color: #FFFF00'>Modo luces en amarillo</button></a>&nbsp;&nbsp;
+    
+    		<script language = "JavaScript">
+        		function isMode1(){
+         
+            		let url = window.location.href
+            		let busqueda = url.search("modo");
+            
+            		if(busqueda != -1){
+            
+                		let busqueda2 = url.search("modo1");
+            
+                		if( busqueda2 != -1){
+                    		document.getElementById("modo1").click()
+                		}
+
+            		}else{
+                		document.getElementById("modo1").click()
+            		}
+            
+        		}
+        
+        		isMode1()
+    </script>
+    </body>
+</html>
